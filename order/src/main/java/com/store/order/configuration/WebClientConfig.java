@@ -1,4 +1,4 @@
-package com.store.notification.configuration;
+package com.store.order.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,3 +12,4 @@ public class WebClientConfig {
         return builder.baseUrl("http://localhost:8082/api").build();
     }
 }
+

@@ -33,9 +33,9 @@ public class RabbitMQComponentImpl  implements RabbitMQComponent {
 
         String response = this.webClient.get()
                 .uri("/user/" + String.valueOf(user_id))
-                .retrieve()
-                .bodyToMono(String.class)
-                .block();
+                        .retrieve()
+                        .bodyToMono(String.class)
+                        .block();
 
         Map<String, Object> user = emailServiceImpl.convertToObject(response);
 
